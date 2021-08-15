@@ -40,13 +40,13 @@ function(detect_current_arch)
 endfunction(detect_current_arch)
 
 set(TARGET_CPU "" CACHE STRING "Target CPU, used as --target_cpu argument")
-set(TARGET_CPU_LIST x86 x64 arm arm64 mipsel)
+set(TARGET_CPU_LIST x86 x86_64 arm arm64 mipsel)
 
 if (TARGET_CPU STREQUAL "")
   detect_current_arch()
 
   if (ARCH_X64)
-    set(TARGET_CPU "x64")
+    set(TARGET_CPU "x86_64")
   elseif (ARCH_X86)
     set(TARGET_CPU "x86")
   elseif (ARCH_ARM64)
