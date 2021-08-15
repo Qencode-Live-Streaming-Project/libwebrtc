@@ -30,7 +30,7 @@ supported platforms and architectures.
   <tr>
     <td align="center"></td>
     <td align="center">x86</td>
-    <td align="center">x64</td>
+    <td align="center">x86_64</td>
     <td align="center">arm</td>
     <td align="center">arm64</td>
   </tr>
@@ -252,7 +252,7 @@ perform cross-compiling.
     argument of the `gn gen` command. The value **must** be one of the following:
     
     - `x86`
-    - `x64`
+    - `x86_64`
     - `arm`
     - `arm64`
     - `mipsel`

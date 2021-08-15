@@ -2,9 +2,9 @@ matrix:
   include:
     - os: linux
       sudo: required
-      env: TARGET_CPU=x64
+      env: TARGET_CPU=x86_64
       addons:
-        apt: &x64-apt
+        apt: &x86_64-apt
           sources:
           - ubuntu-toolchain-r-test
           packages:
@@ -25,21 +25,21 @@ matrix:
 
     - os: linux
       sudo: required
-      env: TARGET_CPU=x64 CMAKE_BUILD_TYPE=Debug
+      env: TARGET_CPU=x86_64 CMAKE_BUILD_TYPE=Debug
       addons:
-        apt: *x64-apt
+        apt: *x86_64-apt
 
     - os: osx
       osx_image: xcode7.3
-      env: TARGET_CPU=x64
+      env: TARGET_CPU=x86_64
       addons:
-        apt: *x64-apt
+        apt: *x86_64-apt
 
     - os: osx
       osx_image: xcode7.3
-      env: TARGET_CPU=x64 CMAKE_BUILD_TYPE=Debug
+      env: TARGET_CPU=x86_64 CMAKE_BUILD_TYPE=Debug
       addons:
-        apt: *x64-apt
+        apt: *x86_64-apt
 
 language: cpp
 

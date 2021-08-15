@@ -5,7 +5,7 @@ matrix:
 
 platform:
   - x86
-  - x64
+  - x86_64
 
 configuration:
   - Debug

@@ -19,7 +19,7 @@
 #
 # - Library type and targets variables:
 #  LIBWEBRTC_TARGET_OS          - android, chromeos, ios, linux, nacl, mac or win
-#  LIBWEBRTC_TARGET_CPU         - x86, x64, arm, arm64 or mipsel
+#  LIBWEBRTC_TARGET_CPU         - x86, x86_64, arm, arm64 or mipsel
 
 # LibWebRTC version number
 set(LIBWEBRTC_MAJOR_VERSION "@LIBWEBRTC_MAJOR_VERSION@")
